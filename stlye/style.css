@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primary-color : #A10000;
+    --bg-one-color : #FFF5F5;
+    --bg-two-color : #F5E6E6;
+    --ads-color : #DC5F00;
+    --success-mute-color : rgba(96, 236, 169, 0.3);
+}
+.bg-primary{
+    background-color: var(--primary-color) !important;
+}
+.text-primary{
+    color: var(--primary-color) !important;
+}
+.border-primary{
+    border: 3px solid var(--primary-color) !important;
+}
+.fadeIn{
+    animation: fadein 0.5s;
+}
+@keyframes fadein {
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
+
+.pulse{
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.1);}
+}
+
+.main .home-container .home{
+    background-image: url('/images/home\ background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .resume-btn{
+    background-color: var(--ads-color);
+    transition: 0.3s ease-in-out;
+}
+
+.home .resume-btn:hover{
+    transform: scale(1.1);
+}
