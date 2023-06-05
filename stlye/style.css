@@ -1,19 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-touch-callout: none;
+    /* -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    user-select: none; */
     box-sizing: border-box !important;
     text-decoration: none !important;
     scroll-behavior: smooth;
 }
 
 :root{
-    --primary-color : #A10000;
+    --primary-color : #A40000;
     --bg-one-color : #FFF5F5;
     --bg-two-color : #F5E6E6;
     --ads-color : #DC5F00;
@@ -45,33 +45,313 @@
     100%{transform: scale(1.1);}
 }
 
-.main .home-container .home{
-    background-image: url('/images/home\ background.jpg');
+.home .resume-btn{
+    background-color: var(--ads-color);
+    top: 20px;
+    right: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.main .ads{
+    background-color: var(--ads-color);
+}
+.ads .ads-img img{
+    width: 375px;
+}
+.ads .btn{
+    transition: 0.3s ease-in-out;
+}
+.ads .btn:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+    color: var(--ads-color);
+}
+
+.main .introduction{
+    background-color: var(--bg-one-color);
+}
+.introduction .logo{
+    width: 45px;
+}
+.introduction .text-container{
+    background-color: var(--bg-two-color);
+    border: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.fullfilling .crd{
+    border: 3px solid var(--primary-color) !important;
+}
+.fullfilling .title{
+    border-bottom: 3px solid var(--primary-color) !important;
+}
+
+.thankyou{
+    background-image: url(/images/thank\ you\ background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.home .resume-btn{
-    background-color: var(--ads-color);
-    transition: 0.3s ease-in-out;
+.thankyou .thank-card{
+    border-radius: 15px 40px 15px 40px;
+    background-color: rgba(255, 255, 255, 0.01);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px)
 }
 
-.home .resume-btn:hover{
-    transform: scale(1.1);
+.main .skills{
+    background-color: var(--bg-two-color);
 }
-
-.home .intro-text{
-    z-index: 0;
+.skills .steps{
+    margin-top: 45px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
 }
-.home .intro-text::after{
+.skills .steps::before{
     content: '';
     position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30%;
-    background-color: var(--underline);
-    z-index: -1;
-    opacity: 70%;
+    bottom: -50px;
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    z-index: 0;
 }
+.skills .steps.one{
+    background-color: #053766;
+}
+.skills .steps.one::before{
+    border-top: 30px solid #053766;
+}
+.skills .steps.two{
+    background-color: #F5AE00;
+}
+.skills .steps.two::before{
+    border-top: 30px solid #F5AE00;
+}
+.skills .steps.three{
+    background-color: #FF6699;
+}
+.skills .steps.three::before{
+    border-top: 30px solid #FF6699;
+}
+.skills .steps.four{
+    background-color: #008000;
+}
+.skills .steps.four::before{
+    border-top: 30px solid transparent;
+}
+.skills .announcement{
+    background-color: #DC5F00;
+    border-radius: 25px;
+}
+
+.how-to-join{
+    background-image: url(/images/background\ 9.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.how-to-join .logo{
+    width: 40px;
+}
+.how-to-join h4 .text{
+    font-size: 24px !important;
+}
+.how-to-join .card{
+    min-height: 190px;
+}
+.how-to-join .card .no{
+    font-size: 32px;
+}
+.how-to-join .img-container{
+    width: 80px;
+}
+.how-to-join .how-to-join-text{
+    border: 2px solid var(--primary-color);
+    border-radius: 10px 40px 10px 40px;
+}
+
+.main .activities{
+    background-color: var(--bg-two-color);
+}
+.activities .grid-container>div{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15px 10px;
+    border: 2px solid var(--primary-color);
+    min-height: 250px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+.activities .grid-container>div:hover{
+    transform: scale(1.03);
+}
+.activities .item-1{grid-area: a;}
+.activities .item-2{grid-area: b;}
+.activities .item-3{
+    background-image: url();
+    grid-area: c;
+}
+.activities .item-4{
+    background-image: url();
+    grid-area: d;
+}
+.activities .item-5{
+    background-image: url();
+    grid-area: e;
+}
+.activities .item-6{
+    background-image: url();
+    grid-area: f;
+}
+.activities .item-7{
+    background-image: url();
+    grid-area: g;
+}
+.activities .item-8{
+    background-image: url();
+    grid-area: h;
+}
+.activities .item-9{
+    background-image: url();
+    grid-area: i;
+}
+.activities .item-10{
+    background-image: url();
+    grid-area: j;
+}
+.activities .item-11{
+    background-image: url();
+    grid-area: k;
+}
+.activities .item-12{
+    background-image: url();
+    grid-area: l;
+}
+.activities .item-13{
+    background-image: url();
+    grid-area: n;
+}
+.activities .item-14{
+    background-image: url();
+    grid-area: m;
+}
+.activities .item-15{
+    background-image: url();
+    grid-area: o;
+}
+
+.activities .grid-container {
+    display: grid;
+    grid-template-areas: 
+    'a b'
+    'c d'
+    'e d'
+    'f g'
+    'h g'
+    'i j'
+    'k k'
+    'l n'
+    'l m'
+    'o o'
+    ;
+    gap: 15px;
+}
+.activities .grid-container>div li{
+    font-size: 16px !important;
+    margin-top: 7px;
+    font-weight: bold;
+}
+.activities .grid-container>div .no{
+    width: 40px;
+    height: 40px;
+}
+.activities .grid-container>div .description{
+    bottom: 10px;
+    right: 10px;
+}
+.activities .grid-container>div .description>div{
+    height: 34px;
+}
+.activities .grid-container>div .description>div::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -17px;
+    height: 100%;
+    width: 34px;
+    border-top: 17px solid var(--primary-color);
+    border-bottom: 17px solid var(--primary-color);
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+}
+
+.main .messages{
+
+}
+.messages h4>span{
+    font-size: 18px !important;
+    font-weight: bold !important;
+}
+.messages .grid-container>div{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--primary-color);
+    min-height: 150px;
+    min-width: 120px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    padding: 0 !important;
+}
+.messages .grid-container>div:hover{
+    transform: scale(1.05);
+}
+.messages .grid-item-1{grid-area: a;}
+.messages .grid-item-2{grid-area: b;background-image: url(/images/personb.png);}
+.messages .grid-item-3{grid-area: c;background-image: url(/images/person\ a.png);}
+.messages .grid-item-4{grid-area: d;background-image: url(/images/personc.png);}
+.messages .grid-item-5{grid-area: e;background-image: url(/images/personc.png);}
+.messages .grid-item-6{grid-area: f;background-image: url(/images/persond.png);}
+.messages .grid-item-7{grid-area: g;background-image: url(/images/persone.png);}
+.messages .grid-item-8{grid-area: h;background-image: url(/images/person\ a.png);}
+.messages .grid-container{
+    display: grid;
+    grid-template-areas: 
+    'a a b c c d d'
+    'e e b f g h h'
+    ;
+    gap: 15px;
+}
+
+.main .recommended-message{}
+.recommended-message .slider-card{
+    width: 300px;
+}
+.recommended-message .slider-card .message{
+    font-size: 18px !important;
+}
+.recommended-message .slider-card .message::before{
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    right: 45%;
+    width: 50px;
+    height: 50px;
+    border-top: 25px solid var(--primary-color);
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+}
+.recommended-message .slider-card img{
+    width: 100px;
+    margin: 25px auto 10px;
+}
+/* 
+https://kenwheeler.github.io/slick/#getting-started
+https://kenwheeler.github.io/slick/#demos */
