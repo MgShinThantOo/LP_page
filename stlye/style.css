@@ -86,7 +86,7 @@
 }
 
 .thankyou{
-    background-image: url(/images/thank\ you\ background.png);
+    background-image: url(./images/thank\ you\ background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -149,7 +149,7 @@
 }
 
 .how-to-join{
-    background-image: url(/images/background\ 9.png);
+    background-image: url(./images/background\ 9.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -313,13 +313,13 @@
     transform: scale(1.05);
 }
 .messages .grid-item-1{grid-area: a;}
-.messages .grid-item-2{grid-area: b;background-image: url(/images/personb.png);}
-.messages .grid-item-3{grid-area: c;background-image: url(/images/person\ a.png);}
-.messages .grid-item-4{grid-area: d;background-image: url(/images/personc.png);}
-.messages .grid-item-5{grid-area: e;background-image: url(/images/personc.png);}
-.messages .grid-item-6{grid-area: f;background-image: url(/images/persond.png);}
-.messages .grid-item-7{grid-area: g;background-image: url(/images/persone.png);}
-.messages .grid-item-8{grid-area: h;background-image: url(/images/person\ a.png);}
+.messages .grid-item-2{grid-area: b;background-image: url(./images/personb.png);}
+.messages .grid-item-3{grid-area: c;background-image: url(./images/person\ a.png);}
+.messages .grid-item-4{grid-area: d;background-image: url(./images/personc.png);}
+.messages .grid-item-5{grid-area: e;background-image: url(./images/personc.png);}
+.messages .grid-item-6{grid-area: f;background-image: url(./images/persond.png);}
+.messages .grid-item-7{grid-area: g;background-image: url(./images/persone.png);}
+.messages .grid-item-8{grid-area: h;background-image: url(./images/person\ a.png);}
 .messages .grid-container{
     display: grid;
     grid-template-areas: 
