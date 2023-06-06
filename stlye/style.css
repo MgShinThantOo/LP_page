@@ -14,6 +14,7 @@
 
 :root{
     --primary-color : #A40000;
+    --secondary-color : #053766;
     --bg-one-color : #FFF5F5;
     --bg-two-color : #F5E6E6;
     --ads-color : #DC5F00;
@@ -22,6 +23,9 @@
 }
 .bg-primary{
     background-color: var(--primary-color) !important;
+}
+.bg-secondary{
+    background-color: var(--secondary-color) !important;
 }
 .text-primary{
     color: var(--primary-color) !important;
@@ -78,6 +82,9 @@
     border: 0.5px solid rgba(0, 0, 0, 0.2);
 }
 
+.main .fullfilling{
+    background-color: var(--bg-two-color);
+}
 .fullfilling .crd{
     border: 3px solid var(--primary-color) !important;
 }
@@ -85,8 +92,30 @@
     border-bottom: 3px solid var(--primary-color) !important;
 }
 
-.thankyou{
-    background-image: url(images/thank\ you\ background.png);
+.main .comparison{
+    background-color: var(--bg-one-color);
+}
+.comparison .table-container{
+    overflow-x: scroll;
+}
+.comparison table{
+    min-width: 800px;
+    max-width: 1000px;
+}
+.comparison table thead th,.comparison table tbody th{
+    width: 25% !important;
+    font-size: 18px !important;
+    letter-spacing: 2px;
+}
+.comparison table tbody td{
+    font-size: 16px !important;
+}
+.comparison table tbody td,.comparison table tbody tr{
+    border:2px solid var(--primary-color);
+}
+
+.main .thankyou{
+    background-image: url(/images/thank\ you\ background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,10 +149,10 @@
     z-index: 0;
 }
 .skills .steps.one{
-    background-color: #053766;
+    background-color: var(--secondary-color);
 }
 .skills .steps.one::before{
-    border-top: 30px solid #053766;
+    border-top: 30px solid var(--secondary-color);
 }
 .skills .steps.two{
     background-color: #F5AE00;
@@ -149,7 +178,7 @@
 }
 
 .how-to-join{
-    background-image: url(images/background\ 9.png);
+    background-image: url(/images/background\ 9.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -292,7 +321,7 @@
 }
 
 .main .messages{
-
+    background-color: var(--bg-one-color);
 }
 .messages h4>span{
     font-size: 18px !important;
@@ -313,13 +342,13 @@
     transform: scale(1.05);
 }
 .messages .grid-item-1{grid-area: a;}
-.messages .grid-item-2{grid-area: b;background-image: url(images/personb.png);}
-.messages .grid-item-3{grid-area: c;background-image: url(images/person\ a.png);}
-.messages .grid-item-4{grid-area: d;background-image: url(images/personc.png);}
-.messages .grid-item-5{grid-area: e;background-image: url(images/personc.png);}
-.messages .grid-item-6{grid-area: f;background-image: url(images/persond.png);}
-.messages .grid-item-7{grid-area: g;background-image: url(images/persone.png);}
-.messages .grid-item-8{grid-area: h;background-image: url(images/person\ a.png);}
+.messages .grid-item-2{grid-area: b;background-image: url(/images/personb.png);}
+.messages .grid-item-3{grid-area: c;background-image: url(/images/person\ a.png);}
+.messages .grid-item-4{grid-area: d;background-image: url(/images/personc.png);}
+.messages .grid-item-5{grid-area: e;background-image: url(/images/personc.png);}
+.messages .grid-item-6{grid-area: f;background-image: url(/images/persond.png);}
+.messages .grid-item-7{grid-area: g;background-image: url(/images/persone.png);}
+.messages .grid-item-8{grid-area: h;background-image: url(/images/person\ a.png);}
 .messages .grid-container{
     display: grid;
     grid-template-areas: 
@@ -329,7 +358,9 @@
     gap: 15px;
 }
 
-.main .recommended-message{}
+.main .recommended-message{
+    background-color: var(--bg-two-color);
+}
 .recommended-message .slider-card{
     width: 300px;
 }
