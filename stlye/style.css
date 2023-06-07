@@ -50,6 +50,8 @@
 }
 
 .home .resume-btn{
+    font-size: 14px !important;
+    font-weight: bold;
     background-color: var(--ads-color);
     top: 20px;
     right: 20px;
@@ -58,10 +60,20 @@
 
 .main .ads{
     background-color: var(--ads-color);
+    background-image: url(/images/ads\ background2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
 }
-.ads .ads-img img{
-    width: 375px;
+.ads .ads-img{
+    right: 0;
 }
+/* .ads .ads-img img{
+    width: 500px;
+}
+.ads .ads-text{
+    width: 750px;
+} */
 .ads .btn{
     transition: 0.3s ease-in-out;
 }
@@ -176,6 +188,26 @@
     background-color: #DC5F00;
     border-radius: 25px;
 }
+.skills .title::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: rotate(-20deg);
+}
+.skills .title::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary-color);
+    transform: rotate(20deg);
+}
 
 .how-to-join{
     background-image: url(/images/background\ 9.png);
@@ -196,7 +228,7 @@
     font-size: 32px;
 }
 .how-to-join .img-container{
-    width: 80px;
+    width: 100px;
 }
 .how-to-join .how-to-join-text{
     border: 2px solid var(--primary-color);
@@ -365,7 +397,7 @@
     width: 300px;
 }
 .recommended-message .slider-card .message{
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 .recommended-message .slider-card .message::before{
     content: '';
@@ -380,9 +412,85 @@
     border-right: 25px solid transparent;
 }
 .recommended-message .slider-card img{
-    width: 100px;
+    width: 80px;
     margin: 25px auto 10px;
 }
-/* 
-https://kenwheeler.github.io/slick/#getting-started
-https://kenwheeler.github.io/slick/#demos */
+
+@media only screen and (max-width: 992px){
+    .ads h3{
+        font-size: 24px !important;
+    }
+    .ads h5{
+        font-size: 20px !important;
+    }
+    .ads .btn{
+        font-size: 16px !important;
+    }
+    .messages .grid-container{
+        grid-template-areas: 
+        'a a b c c'
+        'd d b e f'
+        'g g h h f'
+        ;
+        gap: 15px;
+    }
+} 
+@media only screen and (max-width: 768px){
+    .thankyou .thank-card h6,.thankyou .thank-card div{
+        font-size: 18px !important;
+    }
+    .messages .grid-container{
+        grid-template-areas: 
+        'a a b'
+        'c c b'
+        'd d f'
+        'e e g'
+        'h h h'
+        ;
+        gap: 15px;
+    }
+}
+@media only screen and (max-width: 576px){
+    .resume-btn{
+        font-size: 12px !important;
+    }
+    .thankyou .thank-card h4{font-size: 22px !important;}
+    .thankyou .thank-card h6,.thankyou .thank-card div{
+        font-size: 14px !important;
+    }
+    
+    .activities .grid-container {
+        display: grid;
+        grid-template-areas: 
+        'a a'
+        'b b'
+        'c c'
+        'd d'
+        'e e'
+        'f f'
+        'g g'
+        'h h'
+        'i i'
+        'j j'
+        'k k'
+        'l l'
+        'n n'
+        'm m'
+        'o o'
+        ;
+        gap: 15px;
+    }
+    .messages .grid-container{
+        grid-template-areas: 
+        'a a'
+        'b b'
+        'c c'
+        'd d'
+        'e e'
+        'f f'
+        'g g'
+        'h h'
+        ;
+        gap: 15px;
+    }
+}
