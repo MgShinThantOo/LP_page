@@ -222,7 +222,16 @@
     font-size: 24px !important;
 }
 .how-to-join .card{
-    min-height: 190px;
+    min-height: 200px;
+    transition: 0.3s ease-in-out;
+}
+.how-to-join .card:hover{
+    transform: scale(1.05);
+    background-color: var(--primary-color);
+    color: white;
+}
+.how-to-join .card:hover .no{
+    color: white !important; 
 }
 .how-to-join .card .no{
     font-size: 32px;
@@ -352,6 +361,7 @@
     border-right: 17px solid transparent;
 }
 
+/* 
 .main .messages{
     background-color: var(--bg-one-color);
 }
@@ -388,16 +398,21 @@
     'e e b f g h h'
     ;
     gap: 15px;
-}
+} 
+*/
 
 .main .recommended-message{
-    background-color: var(--bg-two-color);
+    background-color: var(--bg-one-color);
 }
 .recommended-message .slider-card{
     width: 300px;
 }
 .recommended-message .slider-card .message{
     font-size: 16px !important;
+    height: 280px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .recommended-message .slider-card .message::before{
     content: '';
