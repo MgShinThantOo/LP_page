@@ -49,6 +49,10 @@
     100%{transform: scale(1.1);}
 }
 
+.main div{
+    font-size: 16px !important;
+}
+
 .home .resume-btn{
     font-size: 14px !important;
     font-weight: bold;
@@ -85,6 +89,9 @@
 
 .main .introduction{
     background-color: var(--bg-one-color);
+}
+.introduction .text-container{
+    font-size: 20px !important;
 }
 .introduction .logo{
     width: 45px;
@@ -147,6 +154,15 @@
     border-radius: 10px;
     position: relative;
     z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.skills .steps:hover{
+    font-weight: bold;
+    background-color: white !important;
+    transform: scale(1.05);
+}
+.skills .steps:hover.steps::before{
+    border-top: 30px solid white;
 }
 .skills .steps::before{
     content: '';
@@ -159,9 +175,13 @@
     border-left: 30px solid transparent;
     border-right: 30px solid transparent;
     z-index: 0;
+    transition: 0.5s ease-out;
 }
 .skills .steps.one{
     background-color: var(--secondary-color);
+}
+.skills .steps.one:hover{
+    color: var(--secondary-color) !important;
 }
 .skills .steps.one::before{
     border-top: 30px solid var(--secondary-color);
@@ -169,11 +189,17 @@
 .skills .steps.two{
     background-color: #F5AE00;
 }
+.skills .steps.two:hover{
+    color: #F5AE00 !important;
+}
 .skills .steps.two::before{
     border-top: 30px solid #F5AE00;
 }
 .skills .steps.three{
     background-color: #FF6699;
+}
+.skills .steps.three:hover{
+    color: #FF6699 !important;
 }
 .skills .steps.three::before{
     border-top: 30px solid #FF6699;
@@ -181,7 +207,12 @@
 .skills .steps.four{
     background-color: #008000;
 }
+.skills .steps.four:hover{
+    color: #008000 !important;
+}
 .skills .steps.four::before{
+    border-top: 30px solid transparent;
+}.skills .steps:hover.steps.four::before{
     border-top: 30px solid transparent;
 }
 .skills .announcement{
@@ -207,6 +238,9 @@
     height: 100%;
     background-color: var(--primary-color);
     transform: rotate(20deg);
+}
+.skills .let{
+    transform: rotate(90deg);
 }
 
 .how-to-join{
@@ -315,6 +349,26 @@
     background-image: url();
     grid-area: o;
 }
+.activities .item-16{
+    background-image: url();
+    grid-area: p;
+}
+.activities .item-17{
+    background-image: url();
+    grid-area: q;
+}
+.activities .item-18{
+    background-image: url();
+    grid-area: r;
+}
+.activities .item-19{
+    background-image: url();
+    grid-area: s;
+}
+.activities .item-20{
+    background-image: url();
+    grid-area: t;
+}
 
 .activities .grid-container {
     display: grid;
@@ -325,10 +379,12 @@
     'f g'
     'h g'
     'i j'
-    'k k'
-    'l n'
-    'l m'
-    'o o'
+    'k l'
+    'n n'
+    'm o'
+    'p q'
+    'r q'
+    's t'
     ;
     gap: 15px;
 }
@@ -346,6 +402,7 @@
     right: 10px;
 }
 .activities .grid-container>div .description>div{
+    font-size: 16px;
     height: 34px;
 }
 .activities .grid-container>div .description>div::before{
@@ -492,6 +549,11 @@
         'n n'
         'm m'
         'o o'
+        'p p'
+        'q q'
+        'r r'
+        's s'
+        't t'
         ;
         gap: 15px;
     }
