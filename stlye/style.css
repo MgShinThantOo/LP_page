@@ -277,6 +277,9 @@
     border: 2px solid var(--primary-color);
     border-radius: 10px 40px 10px 40px;
 }
+.how-to-join-text .description,.how-to-join .card .text{
+    font-size: 20px !important;
+}
 
 .main .activities{
     background-color: var(--bg-two-color);
@@ -418,7 +421,7 @@
     border-right: 17px solid transparent;
 }
 
-/* 
+
 .main .messages{
     background-color: var(--bg-one-color);
 }
@@ -456,7 +459,7 @@
     ;
     gap: 15px;
 } 
-*/
+
 
 .main .recommended-message{
     background-color: var(--bg-one-color);
@@ -498,6 +501,7 @@
     .ads .btn{
         font-size: 16px !important;
     }
+    
     .messages .grid-container{
         grid-template-areas: 
         'a a b c c'
@@ -510,6 +514,9 @@
 @media only screen and (max-width: 768px){
     .thankyou .thank-card h6,.thankyou .thank-card div{
         font-size: 18px !important;
+    }
+    .description div{
+        font-size: 12px !important;
     }
     .messages .grid-container{
         grid-template-areas: 
@@ -530,7 +537,6 @@
     .thankyou .thank-card h6,.thankyou .thank-card div{
         font-size: 14px !important;
     }
-    
     .activities .grid-container {
         display: grid;
         grid-template-areas: 
@@ -569,5 +575,29 @@
         'h h'
         ;
         gap: 15px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .home .resume-btn{
+        font-size: 10px !important;
+    }
+    .ads h3{
+        font-size: 25px !important;
+    }
+    .ads h5,.introduction h5,.thank-card h4,.skills h4{
+        font-size: 20px !important;
+    }
+    .ads .btn,.thank-card div{
+        font-size: 14px !important;
+    }
+    .introduction .logo{
+        width: 30px;
+    }
+    .introduction .text-container,.how-to-join-text .description{
+        font-size: 16px !important;
+    }
+    .recommended-message .slider-card{
+        width: 330px;
     }
 }
