@@ -49,9 +49,17 @@
     100%{transform: scale(1.1);}
 }
 
+
 .main div{
     font-size: 16px !important;
 }
+
+/* .main .model .model-box{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.main .model .model-box .model-box-content{
+    width: 450px;
+} */
 
 .home .resume-btn{
     font-size: 14px !important;
@@ -111,8 +119,20 @@
     border-bottom: 3px solid var(--primary-color) !important;
 }
 
-.main .comparison{
+.main .video-ads{
     background-color: var(--bg-one-color);
+}
+.video-ads iframe{
+    width: 672px;
+    height: 378px;
+    transition: 0.3s ease-in-out;
+}
+.video-ads .logo{
+    width: 40px;
+}
+
+.main .comparison{
+    background-color: var(--bg-two-color);
 }
 .comparison .table-container{
     overflow-x: scroll;
@@ -512,6 +532,10 @@
     }
 } 
 @media only screen and (max-width: 768px){
+    .video-ads iframe{
+        width: 560px;
+        height: 315px;
+    }
     .thankyou .thank-card h6,.thankyou .thank-card div{
         font-size: 18px !important;
     }
@@ -532,6 +556,10 @@
 @media only screen and (max-width: 576px){
     .resume-btn{
         font-size: 12px !important;
+    }
+    .video-ads iframe{
+        width: 400px;
+        height: 222.23px;
     }
     .thankyou .thank-card h4{font-size: 22px !important;}
     .thankyou .thank-card h6,.thankyou .thank-card div{
@@ -599,5 +627,10 @@
     }
     .recommended-message .slider-card{
         width: 330px;
+    }
+    
+    .video-ads iframe{
+        width: 90%;
+        height: 53%;
     }
 }
